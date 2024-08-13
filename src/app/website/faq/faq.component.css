@@ -1,0 +1,43 @@
+
+.faqs__body{
+    margin: 30px 0px;
+  }
+  .faqs__body .accordion-item{
+    border-left: 10px solid #ec310b;
+    margin: 20px 0px;
+    border-radius: 10px;
+  }
+  .faqs__body .accordion-button{
+    background: rgba(155, 182, 222, 0.20) !important;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
+    box-shadow: none
+  }
+  .faqs__body .accordion-body{
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .faqbg{
+   background: url('https://img.freepik.com/free-photo/3d-render-astronaut-with-question-mark-think-disappointment-tired-caucasian-gestures-3d-illustration-design_460848-10707.jpg?t=st=1722997943~exp=1723001543~hmac=07283c392086b74af5a785d307e356048bcd52050b084976fbc513120bb6cee0&w=996');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: right;
+  }
+
+
+  @media screen and (max-width: 576px){
+    .faqs__image img{
+      width: 100%;
+      height: auto;
+    }
+    .faqs__body .accordion-button{
+      line-height: normal;
+    }
+  }
+  

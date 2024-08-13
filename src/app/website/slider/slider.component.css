@@ -1,0 +1,55 @@
+.btn{
+    padding: 9px 24px;
+    font-weight: 500;
+}
+.btn-brand{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+
+}
+.btn-brand:hover{
+    color: var(--white);
+    background-color: #ec310b;
+}
+.slide1{
+
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)) ,url('https://static.vecteezy.com/system/resources/thumbnails/023/412/552/small_2x/picture-of-woman-holding-laptop-on-business-meeting-photo.jpg');
+}
+
+
+
+.slide2{
+
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)) ,url('https://www.shutterstock.com/image-photo/office-conference-room-meeting-diverse-600nw-2136488967.jpg');
+}
+
+
+.owl-prev,
+.owl-next{
+position: absolute;
+top: 50%;
+width: 60px !important;
+height: 60px !important;
+background-color: rgba(255, 255, 255, 0.2) !important;
+display: grid;
+place-items:center;
+margin-top: -30px !important;
+color: white !important;
+font-weight: 700 !important;
+font-size:  12px !important;
+border-radius: 100px !important;
+
+
+}
+.owl-prev{
+    left: 0;
+}
+.owl-next{
+    right: 0;
+}
+
+.owl-prev:hover,
+.owl-next:hover{
+ background-color: var(--primary-color) !important;
+}

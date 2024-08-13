@@ -1,0 +1,18 @@
+
+<section id="reviews" class="bg-cover">
+    <owl-carousel-o [options]="customOptions">
+
+      @for (item of testimonial; track item ;let idx= $index) {
+         <ng-template carouselSlide>
+            <div class="review">
+              <img src="assets\images\test4.jpg" alt="">
+              <h4>{{item.name}}</h4>
+              <small>{{item.designation}}</small>
+              <p class="lead" [innerHTML]="item.comments"></p>
+             </div>
+              </ng-template>  
+            }
+       </owl-carousel-o>
+    </section>
+
+    <!-- TESTIMONIAL SECTION END -->

@@ -1,0 +1,56 @@
+$(document).ready(function(){
+    $('#hero-slider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        items:1,
+        smartSpeed:1000,
+        navText:['PREV','NEXT'],
+        responsive:{
+            0:{
+               nav:false,
+            },
+            768:{
+                nav:true,
+             },
+        }
+    });
+
+    $('#project-slider').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:true,
+        dots:false,
+        smartSpeed:1000,
+        margin:24,
+        responsive:{
+            0:{
+                nav:false,
+                items:1,
+                margin:0
+             },
+             768:{
+               items:2
+              },
+              1140:{
+                items:3,
+                center:true,
+            
+              }
+        }
+    });
+});
+
+$('#reviews-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:true,
+    smartSpeed:1000,
+    items:1,
+    smartSpeed:2000,
+    responsive:{
+      
+    }
+});

@@ -1,0 +1,37 @@
+@if(faqList && faqList.length > 0){
+    <section class="faqs faqbg" >
+      <div class="faqs__wrapper" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="faqs__header">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-6">
+              <div class="faqs__body" itemscope itemtype="https://schema.org/FAQPage">
+                <div class="accordion" id="accordionExample">
+                  @for (faq of faqList; track faq; let idx = $index){
+                    <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                      <h2 class="accordion-header" itemprop="name">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                [attr.data-bs-target]="'#collapse'+idx" aria-expanded="false" [attr.aria-controls]="'collapse'+idx">
+                          {{faq.faqQuestion}}
+                        </button>
+                      </h2>
+                      <div [id]="'collapse'+idx" class="accordion-collapse collapse" data-bs-parent="#accordionExample" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div class="accordion-body" itemprop="text" [innerHTML]="faq.faqAnswer"></div>
+                      </div>
+                    </div>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    }
+    

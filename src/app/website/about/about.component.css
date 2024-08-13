@@ -1,0 +1,10 @@
+/* about section start  */
+.info-box img{
+    width:100px;
+    margin-right: 24px;
+    padding-bottom: 20px;
+    }
+    .info-box{
+        display: flex;
+        align-items: center;
+    }

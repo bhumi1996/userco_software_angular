@@ -1,0 +1,79 @@
+/* Navbaar design  starts*/
+/* Top Navbar */
+.top-nav{
+    background-color: var(--top-nav);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.top-nav p{
+    margin-bottom: 0;
+    display: inline-block;
+    color: var(--white);
+    margin-right: 16px;
+    
+}
+.top-nav i,
+.top-nav span{
+    vertical-align: middle;
+}
+.social-links a{
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 100%;
+}
+.social-links a:hover{
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/*bottom navbar */
+.navbar{
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+.navbar .navbar-nav .nav-link{
+    font-weight: 600;
+
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:active{
+    color: var(--primary-color);
+}
+.navbar-brand{
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--logo-color);
+}
+.navbar-brand span{
+    color: var(--primary-color);
+}
+.btn{
+    padding: 9px 24px;
+    font-weight: 500;
+}
+.btn-brand{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+
+}
+.btn-brand:hover{
+    color: var(--white);
+    background-color: #ec310b;
+}
+
+/* navbar design end */
+.custom-progress {
+    height: 5px; /* Adjust height */
+    border-radius: 0px; /* Adjust border radius */
+  }
+  .custom-progress-bar {
+    background-color: #ec310b; /* Adjust background color */
+    border-radius: 20px; /* Match border radius */
+  }
